@@ -1,0 +1,17 @@
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Application.deps.json
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Application.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Application.pdb
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.csproj.AssemblyReference.cache
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.AssemblyInfoInputs.cache
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.AssemblyInfo.cs
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.csproj.CoreCompileInputs.cache
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\refint\HumPsi.Application.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.pdb
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\ref\HumPsi.Application.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Domain.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Infrastructure.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Domain.pdb
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\bin\Debug\net8.0\HumPsi.Infrastructure.pdb
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Application\obj\Debug\net8.0\HumPsi.Application.csproj.CopyComplete

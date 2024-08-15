@@ -1,0 +1,12 @@
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\bin\Debug\net8.0\HumPsi.Test.deps.json
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\bin\Debug\net8.0\HumPsi.Test.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\bin\Debug\net8.0\HumPsi.Test.pdb
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.csproj.AssemblyReference.cache
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.AssemblyInfoInputs.cache
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.AssemblyInfo.cs
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.csproj.CoreCompileInputs.cache
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\refint\HumPsi.Test.dll
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\HumPsi.Test.pdb
+C:\Users\bakud\RiderProjects\HumPsi\HumPsi.Test\obj\Debug\net8.0\ref\HumPsi.Test.dll

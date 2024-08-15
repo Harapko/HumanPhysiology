@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Zp/s5fKZLDwoUgPxcnK0xYemLT4O5o8HNZeyOABLttY=",
+  "Source": "HumPsi.Api",
+  "BasePath": "_content/HumPsi.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

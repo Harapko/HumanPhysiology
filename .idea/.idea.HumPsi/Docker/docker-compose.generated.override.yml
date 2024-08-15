@@ -1,0 +1,20 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  humpsi.api:
+    build:
+      context: "C:\\Users\\bakud\\RiderProjects\\HumPsi\\HumPsi.Api"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/HumPsi.Api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "humpsi.api:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\bakud\\.nuget\\packages:/home/app/.nuget/packages"
+    - "C:\\Users\\bakud\\RiderProjects\\HumPsi\\HumPsi.Api:/app:rw"
+    - "C:\\Users\\bakud\\RiderProjects\\HumPsi:/src:rw"
+    working_dir: "/app"
