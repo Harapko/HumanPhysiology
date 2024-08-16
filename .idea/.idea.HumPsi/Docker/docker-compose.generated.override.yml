@@ -2,7 +2,7 @@
 services:
   humpsi.api:
     build:
-      context: "C:\\Users\\bakud\\RiderProjects\\HumPsi\\HumPsi.Api"
+      context: "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api"
       dockerfile: "Dockerfile"
       target: "base"
     command: []
@@ -14,7 +14,7 @@ services:
     image: "humpsi.api:dev"
     ports: []
     volumes:
-    - "C:\\Users\\bakud\\.nuget\\packages:/home/app/.nuget/packages"
-    - "C:\\Users\\bakud\\RiderProjects\\HumPsi\\HumPsi.Api:/app:rw"
-    - "C:\\Users\\bakud\\RiderProjects\\HumPsi:/src:rw"
+    - "/Users/maks/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api:/app:rw"
+    - "/Users/maks/RiderProjects/HumanPhysiology:/src:rw"
     working_dir: "/app"

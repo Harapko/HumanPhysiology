@@ -28,7 +28,7 @@ namespace HumPsi.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("SectionName")
                         .IsRequired()
                         .HasColumnType("text");
 

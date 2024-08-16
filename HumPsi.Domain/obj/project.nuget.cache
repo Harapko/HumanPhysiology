@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9t6TSP/X2ay45GjFAV/vGuy3M3wMTG51soYWyS9kP8UtpxKKz4y1fIg71WozLkx0snsLT5AnrQIvD0+4Lse7bQ==",
+  "dgSpecHash": "c13+PO5P9ZAJmFKZrx9yQ8Mo48Ca/HVopW+mNOCSV7kCjodYl7eIw/o/f75bB4TQ7/NtFyUXKAqbp/26b83CVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bakud\\RiderProjects\\HumPsi\\HumPsi.Domain\\HumPsi.Domain.csproj",
+  "projectFilePath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bakud\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
-    "C:\\Users\\bakud\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\bakud\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "/Users/maks/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
+    "/Users/maks/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/maks/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

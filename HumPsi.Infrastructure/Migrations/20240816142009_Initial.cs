@@ -16,7 +16,7 @@ namespace HumPsi.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Title = table.Column<string>(type: "text", nullable: false)
+                    SectionName = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

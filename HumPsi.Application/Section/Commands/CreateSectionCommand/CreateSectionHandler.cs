@@ -11,7 +11,7 @@ public class CreateSectionHandler(AppDbContext context) : IRequestHandler<Create
         var section = new SectionEntity
         {
             Id = request.Id,
-            Title = request.Title
+            SectionName = request.Title
         };
 
         await context.Section.AddAsync(section, cancellationToken);
