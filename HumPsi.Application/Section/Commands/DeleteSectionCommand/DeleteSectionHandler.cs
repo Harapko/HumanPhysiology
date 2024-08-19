@@ -1,36 +1,14 @@
-using HumPsi.Domain;
+using HumPsi.Domain.Abstraction.IRepositories;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace HumPsi.Application.Section.Commands.DeleteSectionCommand;
 
-public class DeleteSectionHandler(AppDbContext context) : IRequestHandler<DeleteSectionCommand, Guid>
+public class DeleteSectionHandler(ISectionRepository repository) : IRequestHandler<DeleteSectionCommand, Guid>
 {
     public async Task<Guid> Handle(DeleteSectionCommand request, CancellationToken cancellationToken)
     {
-        try
-        {
-            await context.Section
-                .Where(s => s.Id == request.Id)
-                .ExecuteDeleteAsync(cancellationToken: cancellationToken);
-            
-        }
-        catch (InvalidOperationException e)
-        {
-            var objFromDb = await context.Section
-                .FindAsync(new object?[] { request.Id }, cancellationToken: cancellationToken);
-            if (objFromDb is null) return Guid.Empty;
+        var result = await repository.DeleteSection(request.Id);
 
-            context.Section.Remove(objFromDb);
-            await context.SaveChangesAsync(cancellationToken);
-            
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
-
-        return request.Id;
+        return result;
     }
 }

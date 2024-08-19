@@ -10,11 +10,10 @@ public class DeleteSectionHandlerTest : TestDbContext
     public async Task Handle_Should_ReturnGuid_IfDeleteIsTrue()
     {
         //Arrange
-        var command = new DeleteSectionCommand(Guid.Parse("185A38F0-0F23-4FD2-A45F-DD2DEB722412"));
-        var handler = new DeleteSectionHandler(await CreateDbWithSection());
+        var repository = await SectionRepository();
 
         //Act
-        var result = await handler.Handle(command, default);
+        var result = await repository.DeleteSection(Guid.Parse("0C345C9D-543F-48A5-AEE8-59ACCD0B95E8"));
 
         //Asser
         result.Should().NotBeEmpty();

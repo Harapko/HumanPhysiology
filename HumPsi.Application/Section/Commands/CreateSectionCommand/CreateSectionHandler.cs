@@ -1,10 +1,11 @@
 using HumPsi.Domain;
+using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
 using MediatR;
 
 namespace HumPsi.Application.Section.Commands.CreateSectionCommand;
 
-public class CreateSectionHandler(AppDbContext context) : IRequestHandler<CreateSectionCommand, SectionEntity>
+public class CreateSectionHandler(ISectionRepository repository) : IRequestHandler<CreateSectionCommand, SectionEntity>
 {
     public async Task<SectionEntity> Handle(CreateSectionCommand request, CancellationToken cancellationToken)
     {
@@ -14,8 +15,7 @@ public class CreateSectionHandler(AppDbContext context) : IRequestHandler<Create
             SectionName = request.Title
         };
 
-        await context.Section.AddAsync(section, cancellationToken);
-        await context.SaveChangesAsync(cancellationToken);
-        return section;
+        var result = await repository.CreateSection(section);
+        return result;
     }
 }

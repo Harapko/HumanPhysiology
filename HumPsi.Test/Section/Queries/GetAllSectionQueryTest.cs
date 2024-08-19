@@ -1,6 +1,7 @@
 using FluentAssertions;
 using HumPsi.Application.Section.Queries.GetAllSectionQuery;
 using HumPsi.Domain.Entities;
+using HumPsi.Infrastructure.Repositories;
 using Xunit;
 
 namespace HumPsi.Test.Section.Queries;
@@ -11,11 +12,10 @@ public class GetAllSectionQueryTest : TestDbContext
     public async Task Handle_Should_ReturnAllSection()
     {
         //Arrange
-        var query = new GetAllSectionQuery();
-        var handler = new GetAllSectionHandler(await CreateDbWithSection());
-
+        var repository = await SectionRepository();
+        
         //Act
-        var result = await handler.Handle(query, default);
+        var result = await repository.GetSection();
 
         //Assert
         result.Should().NotBeNull();

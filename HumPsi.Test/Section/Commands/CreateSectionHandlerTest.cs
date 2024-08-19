@@ -1,6 +1,7 @@
 using FluentAssertions;
 using HumPsi.Application.Section.Commands.CreateSectionCommand;
 using HumPsi.Domain.Entities;
+using HumPsi.Infrastructure.Repositories;
 using Xunit;
 
 namespace HumPsi.Test.Section.Commands;
@@ -11,12 +12,15 @@ public sealed class CreateSectionHandlerTest : TestDbContext
     public async Task Handle_Should_ReturnSectionEntity_IfCreationIsTrue()
     {
         //Arrange
-        var command = new CreateSectionCommand("TestSection2");
-
-        var handler = new CreateSectionHandler(await CreateDbWithSection());
+        var repository = await SectionRepository();
+        var section = new SectionEntity
+        {
+            Id = Guid.NewGuid(),
+            SectionName = "TestSection2"
+        };
 
         //Act
-        var result = await handler.Handle(command, default);
+        var result = await repository.CreateSection(section);
         
         //Assert
         result.Should().NotBeNull();

@@ -11,11 +11,10 @@ public class UpdateSectionHandlerTest : TestDbContext
     public async Task Handle_Should_ReturnGuid_IfUpdatingIsTrue()
     {
         //Arrange
-        var command = new UpdateSectionCommand(Guid.Parse("185A38F0-0F23-4FD2-A45F-DD2DEB722412"), "SectionTestUpdate");
-        var handler = new UpdateSectionHandler(await CreateDbWithSection());
+        var repository = await SectionRepository();
 
         //Act
-        var result = await handler.Handle(command, default);
+        var result = await repository.UpdateSection(Guid.Parse("A5C8DB17-CDDC-4E9D-8C23-4B0C89A94AF9"), "SectionTestUpdate");
 
         //Assert
         result.Should().NotBeEmpty();

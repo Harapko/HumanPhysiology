@@ -145,3 +145,7 @@ C:/Users/bakud/RiderProjects/HumPsi/HumPsi.Test/obj/Debug/net8.0/ref/HumPsi.Test
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/obj/Debug/net8.0/HumPsi.Test.pdb
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/obj/Debug/net8.0/HumPsi.Test.genruntimeconfig.cache
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/obj/Debug/net8.0/ref/HumPsi.Test.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/bin/Debug/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/bin/Debug/net8.0/StackExchange.Redis.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/bin/Debug/net8.0/System.IO.Pipelines.dll
