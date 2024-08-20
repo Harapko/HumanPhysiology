@@ -2,18 +2,32 @@ using HumPsi.Domain;
 using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace HumPsi.Infrastructure.Repositories;
 
-public class SectionRepository(AppDbContext context) : ISectionRepository
+public class SectionRepository(
+    AppDbContext context,
+    IRedisRepository redis,
+    ILogger<SectionRepository> logger) : ISectionRepository
 {
     public async Task<List<SectionEntity>> GetSection()
     {
-        var sectionList = await context.Section
+        var section = await redis.GetData<List<SectionEntity>>("Section");
+        if (section is not null)
+        {
+            logger.LogInformation("Get Section From Redis");
+            return section;
+        }
+        
+        var sectionDb = await context.Section
             .AsNoTracking()
             .ToListAsync();
 
-        return sectionList;
+        redis.SetData("Section", sectionDb);
+
+        logger.LogInformation("Get Section From Database");
+        return sectionDb;
     }
 
     public async Task<SectionEntity> CreateSection(SectionEntity section)

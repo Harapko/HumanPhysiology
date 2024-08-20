@@ -1,20 +1,20 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/maks/Library/Caches/JetBrains/Rider2024.1/resharper-host/temp/Rider/vAny/CoverageData/_HumPsi.-1810025267/Snapshot/snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3d573abf_002D8eec_002D4a2a_002Da0a6_002D028a141caf7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Handle_Should_ReturnSectionEntity_IfCreationIsTrue #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest.Handle_Should_ReturnSectionEntity_IfCreationIsTrue&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3d573abf_002D8eec_002D4a2a_002Da0a6_002D028a141caf7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Handle_Should_ReturnSectionEntity_IfCreationIsTrue #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest.Handle_Should_ReturnSectionEntity_IfCreationIsTrue&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=421bbd0f_002Da1b5_002D4393_002Dab05_002Dff93ccf7d963/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Solution /&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=421bbd0f_002Da1b5_002D4393_002Dab05_002Dff93ccf7d963/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4ad5f39c_002D22f8_002D4cf8_002D9d28_002Dd741dc48ee17/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Handle_Should_ReturnSectionEntity_IfCreationIsTrue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest.Handle_Should_ReturnSectionEntity_IfCreationIsTrue&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Queries.GetAllSectionQueryTest.Handle_Should_ReturnAllSection&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.UpdateSectionHandlerTest.Handle_Should_ReturnGuid_IfUpdatingIsTrue&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.DeleteSectionHandlerTest.Handle_Should_ReturnGuid_IfDeleteIsTrue&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.UpdateSectionHandlerTest&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4ad5f39c_002D22f8_002D4cf8_002D9d28_002Dd741dc48ee17/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Handle_Should_ReturnSectionEntity_IfCreationIsTrue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest.Handle_Should_ReturnSectionEntity_IfCreationIsTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Queries.GetAllSectionQueryTest.Handle_Should_ReturnAllSection&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.UpdateSectionHandlerTest.Handle_Should_ReturnGuid_IfUpdatingIsTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.DeleteSectionHandlerTest.Handle_Should_ReturnGuid_IfDeleteIsTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.UpdateSectionHandlerTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

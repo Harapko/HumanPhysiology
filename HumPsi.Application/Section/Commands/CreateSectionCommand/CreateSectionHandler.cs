@@ -1,4 +1,3 @@
-using HumPsi.Domain;
 using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
 using MediatR;

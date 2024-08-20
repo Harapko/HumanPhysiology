@@ -25,6 +25,7 @@ public static  class DependencyInjection
             options.Configuration = redisConnStr);
 
         services.AddScoped<ISectionRepository, SectionRepository>();
+        services.AddScoped<IRedisRepository, RedisRepository>();
         
         return services;
     }

@@ -1,8 +1,6 @@
-using HumPsi.Domain;
 using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace HumPsi.Application.Section.Queries.GetAllSectionQuery;
 

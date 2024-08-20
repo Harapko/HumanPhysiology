@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/HumPsi.Api.props" />
+  <Import Project="..\build\HumPsi.Api.props" />
 </Project>

@@ -36,5 +36,5 @@ public class TestDbContext
     }
 
     protected static async Task<SectionRepository> SectionRepository() =>
-        new SectionRepository(await CreateDbWithSection());
+        new SectionRepository(await CreateDbWithSection(), null, null);
 }

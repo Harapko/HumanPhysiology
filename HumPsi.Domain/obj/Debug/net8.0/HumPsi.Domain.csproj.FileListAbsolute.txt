@@ -23,3 +23,16 @@ C:/Users/bakud/RiderProjects/HumPsi/HumPsi.Domain/obj/Debug/net8.0/ref/HumPsi.Do
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net8.0/refint/HumPsi.Domain.dll
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net8.0/HumPsi.Domain.pdb
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net8.0/ref/HumPsi.Domain.dll
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\bin\Debug\net8.0\HumPsi.Domain.deps.json
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\bin\Debug\net8.0\HumPsi.Domain.dll
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\bin\Debug\net8.0\HumPsi.Domain.pdb
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.csproj.AssemblyReference.cache
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.AssemblyInfoInputs.cache
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.AssemblyInfo.cs
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.sourcelink.json
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.dll
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\refint\HumPsi.Domain.dll
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\HumPsi.Domain.pdb
+C:\Users\bakud\RiderProjects\HumanPhysiology\HumPsi.Domain\obj\Debug\net8.0\ref\HumPsi.Domain.dll

@@ -161,11 +161,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/8.0.8": {
+      "Microsoft.EntityFrameworkCore/8.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.8",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.4",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.4",
           "Microsoft.Extensions.Caching.Memory": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0"
         },
@@ -183,7 +183,7 @@
           "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.8": {
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.4": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -196,7 +196,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.8": {
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -205,10 +205,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/8.0.8": {
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.8"
+          "Microsoft.EntityFrameworkCore": "8.0.4"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
@@ -1031,8 +1031,8 @@
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
           "HumPsi.Domain": "1.0.0",
           "MediatR": "12.4.0",
-          "Microsoft.EntityFrameworkCore": "8.0.8",
-          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.8",
+          "Microsoft.EntityFrameworkCore": "8.0.4",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "StackExchange.Redis": "2.8.0"
         },
@@ -1354,10 +1354,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.EntityFrameworkCore/8.0.8": {
-      "sha512": "iK+jrJzkfbIxutB7or808BPmJtjUEi5O+eSM7cLDwsyde6+3iOujCSfWnrHrLxY3u+EQrJD+aD8DJ6ogPA2Rtw==",
+    "Microsoft.EntityFrameworkCore/8.0.4": {
+      "sha512": "/kyu9pXuxQvhg8RO/oN5Q5Og7cDIVvZtrt1z48rX7Yido+zEGkUkp3/Bjd9u45N2uuPPF8mn2pKDlAewCvv3/Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/8.0.8",
+      "path": "microsoft.entityframeworkcore/8.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1366,14 +1366,14 @@
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.8.0.4.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.8": {
-      "sha512": "9mMQkZsfL1c2iifBD8MWRmwy59rvsVtR9NOezJj7+g1j4P7g49MJHd8k8faC/v7d5KuHkQ6KOQiSItvoRt9PXA==",
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.4": {
+      "sha512": "S50pjtPNOvRktacaO6UAhvGCPMT56wxqEq8fQfcjaSUySPGba6mKWo6ackw6DdeAR1cA6U+U0uj27warA2KtJA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.8",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1381,14 +1381,14 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.8": {
-      "sha512": "OlAXMU+VQgLz5y5/SBkLvAa9VeiR3dlJqgIebEEH2M2NGA3evm68/Tv7SLWmSxwnEAtA3nmDEZF2pacK6eXh4Q==",
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.4": {
+      "sha512": "P8hfMZECdbgle4Us8HGRUKAjqVwgbtr5JqtCxqEoiVORrNQAmcpu3g1NKwTAoUsO9Z0QRgExtYoAmdggR/DkMQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.8",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1396,14 +1396,14 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "docs/PACKAGE.md",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.8.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.InMemory/8.0.8": {
-      "sha512": "B4r7MGPHUjuIdoI4dMvGFWK2vIT1svIgR3fITc+62ZHmbkRS+gq0mZ8BU9CXM388MfD5Tsn5KXJjWeu+b9gLlg==",
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.4": {
+      "sha512": "3fj0V/NKG66LLwUtoDofSyogku1ueF78uUIdGPEJJhS3MW7w3xLsizMaDYX+ooR74IM96YJI5N3tyOU5FZiiwg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/8.0.8",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1411,7 +1411,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.8.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.8.0.4.nupkg.sha512",
         "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
@@ -2421,8 +2421,8 @@
       "HumPsi.Application >= 1.0.0",
       "HumPsi.Infrastructure >= 1.0.0",
       "MediatR >= 12.4.0",
-      "Microsoft.EntityFrameworkCore >= 8.0.8",
-      "Microsoft.EntityFrameworkCore.InMemory >= 8.0.8",
+      "Microsoft.EntityFrameworkCore >= 8.0.4",
+      "Microsoft.EntityFrameworkCore.InMemory >= 8.0.4",
       "Microsoft.NET.Test.Sdk >= 17.10.0",
       "Moq >= 4.20.70",
       "Moq.EntityFrameworkCore >= 8.0.1.2",
@@ -2432,35 +2432,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/maks/.nuget/packages/": {}
+    "C:\\Users\\bakud\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/HumPsi.Test.csproj",
+      "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Test\\HumPsi.Test.csproj",
       "projectName": "HumPsi.Test",
-      "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/HumPsi.Test.csproj",
-      "packagesPath": "/Users/maks/.nuget/packages/",
-      "outputPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Test/obj/",
+      "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Test\\HumPsi.Test.csproj",
+      "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/maks/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj": {
-              "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj"
+            "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj": {
+              "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj"
             },
-            "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj": {
-              "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj"
+            "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj"
             }
           }
         }
@@ -2489,11 +2491,11 @@
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[8.0.8, )"
+            "version": "[8.0.4, )"
           },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
-            "version": "[8.0.8, )"
+            "version": "[8.0.4, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -2538,7 +2540,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
