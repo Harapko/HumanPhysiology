@@ -15,4 +15,4 @@ With detailed articles, diagrams, and quizzes, Human Physiology helps users deep
 #### xUnit
 #### Fluent Validations
 #### Clean architecture
-#### CQRS
+#### CQRS/MediatR
