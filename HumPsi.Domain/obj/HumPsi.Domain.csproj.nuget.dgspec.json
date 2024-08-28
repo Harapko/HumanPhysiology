@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj": {}
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj": {
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj",
+        "projectUniqueName": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj",
         "projectName": "HumPsi.Domain",
-        "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj",
-        "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\obj\\",
+        "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj",
+        "packagesPath": "/Users/maks/.nuget/packages/",
+        "outputPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +41,14 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             }
           },
           "imports": [
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

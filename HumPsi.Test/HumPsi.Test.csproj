@@ -10,6 +10,8 @@
       <PackageReference Include="FakeItEasy" Version="8.3.0" />
       <PackageReference Include="FluentAssertions" Version="7.0.0-alpha.4" />
       <PackageReference Include="MediatR" Version="12.4.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.4" />
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
@@ -26,6 +28,16 @@
     <ItemGroup>
       <ProjectReference Include="..\HumPsi.Application\HumPsi.Application.csproj" />
       <ProjectReference Include="..\HumPsi.Infrastructure\HumPsi.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+        <HintPath>..\..\..\..\..\usr\local\share\dotnet\shared\Microsoft.AspNetCore.App\8.0.4\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.AspNetCore.Http">
+        <HintPath>..\..\..\..\..\usr\local\share\dotnet\shared\Microsoft.AspNetCore.App\8.0.4\Microsoft.AspNetCore.Http.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.AspNetCore.Http.Features" />
     </ItemGroup>
 
 </Project>

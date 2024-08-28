@@ -17,10 +17,34 @@ namespace HumPsi.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("HumPsi.Domain.Entities.HeadlineEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("PhotoPath")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("SectionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SectionId");
+
+                    b.ToTable("Headline");
+                });
 
             modelBuilder.Entity("HumPsi.Domain.Entities.SectionEntity", b =>
                 {
@@ -35,6 +59,22 @@ namespace HumPsi.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Section");
+                });
+
+            modelBuilder.Entity("HumPsi.Domain.Entities.HeadlineEntity", b =>
+                {
+                    b.HasOne("HumPsi.Domain.Entities.SectionEntity", "SectionEntity")
+                        .WithMany("Headlines")
+                        .HasForeignKey("SectionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SectionEntity");
+                });
+
+            modelBuilder.Entity("HumPsi.Domain.Entities.SectionEntity", b =>
+                {
+                    b.Navigation("Headlines");
                 });
 #pragma warning restore 612, 618
         }

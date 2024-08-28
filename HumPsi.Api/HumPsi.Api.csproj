@@ -9,6 +9,8 @@
 
     <ItemGroup>
         <PackageReference Include="MediatR" Version="12.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
           <PrivateAssets>all</PrivateAssets>
@@ -26,6 +28,11 @@
     <ItemGroup>
       <ProjectReference Include="..\HumPsi.Application\HumPsi.Application.csproj" />
       <ProjectReference Include="..\HumPsi.Infrastructure\HumPsi.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\headlinePhoto\" />
+      <Folder Include="wwwroot\headlineTest\" />
     </ItemGroup>
 
 </Project>

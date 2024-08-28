@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png",
+      "PackagePath": "staticwebassets/headlinePhoto/90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png"
+    },
+    {
+      "Id": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/9d4095b3-e386-4f8e-9a27-d3c04a3cc127.png",
+      "PackagePath": "staticwebassets/headlinePhoto/9d4095b3-e386-4f8e-9a27-d3c04a3cc127.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.HumPsi.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.HumPsi.Api.props",
+      "PackagePath": "build\\HumPsi.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.HumPsi.Api.props",
+      "PackagePath": "buildMultiTargeting\\HumPsi.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.HumPsi.Api.props",
+      "PackagePath": "buildTransitive\\HumPsi.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

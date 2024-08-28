@@ -13,7 +13,7 @@ namespace HumPsi.Api.Controllers;
 public class SectionController(IMediator mediator) : ControllerBase
 {
     [HttpGet]
-    public async Task<ActionResult<List<SectionEntity>>> GetAllSection()
+    public async Task<ActionResult<List<SectionEntity>>> GetAllSectionAsync()
     {
         var result = await mediator.Send(new GetAllSectionQuery());
 
@@ -24,7 +24,7 @@ public class SectionController(IMediator mediator) : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<SectionEntity>> CreateSection([FromBody] CreateSectionCommand command)
+    public async Task<ActionResult<SectionEntity>> CreateSectionAsync([FromBody] CreateSectionCommand command)
     {
         var result = await mediator.Send(new CreateSectionCommand(command.Title));
 
@@ -32,7 +32,7 @@ public class SectionController(IMediator mediator) : ControllerBase
     }
 
     [HttpPut]
-    public async Task<ActionResult<string>> UpdateSection([FromBody] UpdateSectionCommand command)
+    public async Task<ActionResult<string>> UpdateSectionAsync([FromBody] UpdateSectionCommand command)
     {
         var result = await mediator.Send(new UpdateSectionCommand(command.Id, command.SectionName));
         
@@ -43,7 +43,7 @@ public class SectionController(IMediator mediator) : ControllerBase
     }
 
     [HttpDelete]
-    public async Task<ActionResult<Guid>> DeleteSection([FromBody] DeleteSectionCommand command)
+    public async Task<ActionResult<Guid>> DeleteSectionAsync([FromBody] DeleteSectionCommand command)
     {
         var result = await mediator.Send(new DeleteSectionCommand(command.Id));
         

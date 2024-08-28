@@ -24,8 +24,10 @@ public static  class DependencyInjection
         services.AddStackExchangeRedisCache(options =>
             options.Configuration = redisConnStr);
 
-        services.AddScoped<ISectionRepository, SectionRepository>();
         services.AddScoped<IRedisRepository, RedisRepository>();
+        services.AddScoped<ISectionRepository, SectionRepository>();
+        services.AddScoped<IHeadlineRepository, HeadlineRepository>();
+        services.AddScoped<IPhotoRepository, PhotoRepository>();
         
         return services;
     }

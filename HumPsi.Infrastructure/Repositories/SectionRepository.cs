@@ -16,7 +16,7 @@ public class SectionRepository(
         var section = await redis.GetData<List<SectionEntity>>("Section");
         if (section is not null)
         {
-            logger.LogInformation("Get Section From Redis");
+            logger.LogInformation("Get Section from Redis");
             return section;
         }
         
@@ -24,7 +24,7 @@ public class SectionRepository(
             .AsNoTracking()
             .ToListAsync();
 
-        redis.SetData("Section", sectionDb);
+        await redis.SetData("Section", sectionDb);
 
         logger.LogInformation("Get Section From Database");
         return sectionDb;

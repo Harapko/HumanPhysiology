@@ -1,38 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api\\HumPsi.Api.csproj": {}
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/HumPsi.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api\\HumPsi.Api.csproj": {
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/HumPsi.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api\\HumPsi.Api.csproj",
+        "projectUniqueName": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/HumPsi.Api.csproj",
         "projectName": "HumPsi.Api",
-        "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api\\HumPsi.Api.csproj",
-        "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api\\obj\\",
+        "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/HumPsi.Api.csproj",
+        "packagesPath": "/Users/maks/.nuget/packages/",
+        "outputPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj": {
-                "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj"
+              "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj": {
+                "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj"
               },
-              "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj"
+              "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj": {
+                "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj"
               }
             }
           }
@@ -50,6 +48,14 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -85,39 +91,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj": {
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj",
+        "projectUniqueName": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj",
         "projectName": "HumPsi.Application",
-        "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\HumPsi.Application.csproj",
-        "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Application\\obj\\",
+        "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj",
+        "packagesPath": "/Users/maks/.nuget/packages/",
+        "outputPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj": {
-                "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj"
+              "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {
+                "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj"
               },
-              "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj"
+              "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj": {
+                "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj"
               }
             }
           }
@@ -151,6 +155,14 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
@@ -177,28 +189,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj": {
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj",
+        "projectUniqueName": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj",
         "projectName": "HumPsi.Domain",
-        "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj",
-        "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\obj\\",
+        "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj",
+        "packagesPath": "/Users/maks/.nuget/packages/",
+        "outputPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -220,6 +230,14 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             }
           },
           "imports": [
@@ -238,36 +256,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj": {
+    "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj",
+        "projectUniqueName": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj",
         "projectName": "HumPsi.Infrastructure",
-        "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\HumPsi.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\bakud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Infrastructure\\obj\\",
+        "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/HumPsi.Infrastructure.csproj",
+        "packagesPath": "/Users/maks/.nuget/packages/",
+        "outputPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bakud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj": {
-                "projectPath": "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Domain\\HumPsi.Domain.csproj"
+              "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {
+                "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj"
               }
             }
           }
@@ -302,6 +318,14 @@
               "target": "Package",
               "version": "[12.4.0, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -315,6 +339,10 @@
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -341,7 +369,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
