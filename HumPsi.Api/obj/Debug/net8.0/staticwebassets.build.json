@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aBFeJ9WggoH+HYNug2Mk7CiaKvyf1bOMvAulm2MS3SM=",
+  "Hash": "oda/s1ZHIdk3kNmJnNTtqwYwUGMYVVCidoxdOOfLV4g=",
   "Source": "HumPsi.Api",
   "BasePath": "_content/HumPsi.Api",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/6beddade-b291-4b89-8fe9-af8447cb9c7e.png",
+      "SourceId": "HumPsi.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/",
+      "BasePath": "_content/HumPsi.Api",
+      "RelativePath": "headlinePhoto/6beddade-b291-4b89-8fe9-af8447cb9c7e.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/headlinePhoto/6beddade-b291-4b89-8fe9-af8447cb9c7e.png"
+    },
     {
       "Identity": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png",
       "SourceId": "HumPsi.Api",
@@ -53,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/headlinePhoto/9d4095b3-e386-4f8e-9a27-d3c04a3cc127.png"
+    },
+    {
+      "Identity": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/fb7d0a97-e478-4042-81f2-c63aa2e02891.png",
+      "SourceId": "HumPsi.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/",
+      "BasePath": "_content/HumPsi.Api",
+      "RelativePath": "headlinePhoto/fb7d0a97-e478-4042-81f2-c63aa2e02891.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/headlinePhoto/fb7d0a97-e478-4042-81f2-c63aa2e02891.png"
     }
   ]
 }

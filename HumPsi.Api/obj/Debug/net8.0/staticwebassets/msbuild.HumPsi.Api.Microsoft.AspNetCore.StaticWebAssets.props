@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\headlinePhoto\6beddade-b291-4b89-8fe9-af8447cb9c7e.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HumPsi.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HumPsi.Api</BasePath>
+      <RelativePath>headlinePhoto/6beddade-b291-4b89-8fe9-af8447cb9c7e.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\headlinePhoto\6beddade-b291-4b89-8fe9-af8447cb9c7e.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\headlinePhoto\90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png))">
       <SourceType>Package</SourceType>
       <SourceId>HumPsi.Api</SourceId>
@@ -31,6 +47,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\headlinePhoto\9d4095b3-e386-4f8e-9a27-d3c04a3cc127.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\headlinePhoto\fb7d0a97-e478-4042-81f2-c63aa2e02891.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HumPsi.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HumPsi.Api</BasePath>
+      <RelativePath>headlinePhoto/fb7d0a97-e478-4042-81f2-c63aa2e02891.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\headlinePhoto\fb7d0a97-e478-4042-81f2-c63aa2e02891.png))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

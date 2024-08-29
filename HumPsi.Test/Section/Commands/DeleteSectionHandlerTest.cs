@@ -7,7 +7,7 @@ namespace HumPsi.Test.Section.Commands;
 public class DeleteSectionHandlerTest : TestDbContext
 {
     [Fact]
-    public async Task Handle_Should_ReturnGuid_IfDeleteIsTrue()
+    public async Task Handle_Should_ReturnString_IfDeleteIsTrue()
     {
         //Arrange
         var repository = await SectionRepository();

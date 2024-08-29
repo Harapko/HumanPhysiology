@@ -14,8 +14,7 @@ namespace HumPsi.Test;
 public class TestDbContext
 {
     private static readonly Mock<IRedisRepository> MockRedis = new();
-    private static readonly Mock<IPhotoRepository> MockPhoto = new();
-    private static readonly Mock<IWebHostEnvironment> EnvPhoto = new();
+    private static readonly Mock<IWebHostEnvironment> MockIWebHost = new();
 
     private static async Task<AppDbContext> CreateDatabase()
     {
@@ -74,19 +73,14 @@ public class TestDbContext
 
     protected static async Task<HeadlineRepository> HeadlineRepository()
     {
-        
-        // var filePath = "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/7b7b5ac3-a8ba-48f7-8cf3-758e17570fc5.jpg";
-        // file = CreateFormFileFromDisk(filePath);
-
-        // MockPhoto.Setup(rep => rep.CreateImage(Guid.Parse("F7F22DFA-0A3D-4F93-B11B-D5B3314F04EB"), file, "headlineTest"));
-        
         return new HeadlineRepository(await CreateDb(), MockRedis.Object,
-            new Mock<ILogger<HeadlineRepository>>().Object, PhotoRepository().Result);
+            new Mock<ILogger<HeadlineRepository>>().Object, PhotoRepository());
     }
 
-    protected async static Task<PhotoRepository> PhotoRepository()
+    private static PhotoRepository PhotoRepository()
     {
-        var repository = new PhotoRepository(EnvPhoto.Object);
+        MockIWebHost.Setup(env => env.WebRootPath).Returns("/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot");
+        var repository = new PhotoRepository(MockIWebHost.Object);
         return repository;
     }
     

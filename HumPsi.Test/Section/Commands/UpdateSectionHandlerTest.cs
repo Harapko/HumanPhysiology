@@ -8,7 +8,7 @@ namespace HumPsi.Test.Section.Commands;
 public class UpdateSectionHandlerTest : TestDbContext
 {
     [Fact]
-    public async Task Handle_Should_ReturnGuid_IfUpdatingIsTrue()
+    public async Task Handle_Should_ReturnString_IfUpdatingIsTrue()
     {
         //Arrange
         var repository = await SectionRepository();
