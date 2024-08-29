@@ -16,3 +16,4 @@ With detailed articles, diagrams, and quizzes, Human Physiology helps users deep
 #### Fluent Validations
 #### Clean architecture
 #### CQRS/MediatR
+#### AutoMapper
