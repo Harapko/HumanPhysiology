@@ -3,11 +3,11 @@ using MediatR;
 
 namespace HumPsi.Application.Headline.Commands.UpdateHeadlineCommand;
 
-public class UpdateHeadlineHandler(IHeadlineRepository repository) : IRequestHandler<UpdateHeadlineCommand, Guid>
+public class UpdateHeadlineHandler(IHeadlineRepository repository) : IRequestHandler<UpdateHeadlineCommand, (int code, string text)>
 {
-    public async Task<Guid> Handle(UpdateHeadlineCommand request, CancellationToken cancellationToken)
+    public async Task<(int code, string text)> Handle(UpdateHeadlineCommand request, CancellationToken cancellationToken)
     {
-        var result = await repository.UpdateHeadline(request.Id, request.Title, request.File);
+        var result = await repository.UpdateHeadline(request.headline, request.File);
         return result;
     }
 }

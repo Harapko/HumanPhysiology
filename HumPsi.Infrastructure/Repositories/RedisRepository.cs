@@ -44,6 +44,52 @@ public class RedisRepository : IRedisRepository
         return res;
 
     }
+    
+    public async Task<bool> AddItemToCollection<T>(string key, T newItem)
+    {
+        var existingCollection = await GetData<List<T>>(key);
+        if (existingCollection is null) return default;
+        
+        existingCollection.Add(newItem);
+        return await SetData(key, existingCollection);
+
+    }
+
+    public async Task<bool> CheckExistItemToCollection<T>(string key, T item)
+    {
+        var existingCollection = await GetData<List<T>>(key);
+        if (existingCollection is null) return default;
+
+        var exists = existingCollection.Contains(item);
+
+        return exists;
+    }
+    
+    public async Task<bool> UpdateItemToCollection<T>(string key, Predicate<T> match, T updatedItem)
+    {
+        var existingCollection = await GetData<List<T>>(key);
+        if (existingCollection is null) return default;
+        
+
+        var index = existingCollection.FindIndex(match);
+        if (index == -1) return default;
+        existingCollection[index] = updatedItem;
+        
+        return await SetData(key, existingCollection);
+    }
+    
+    public async Task<bool> DeleteItemToCollection<T>(string key, Func<T, bool> match) 
+    {
+        var existingCollection = await GetData<List<T>>(key);
+        if (existingCollection is null) return default;
+
+        var objFromCache = existingCollection.FirstOrDefault(match);
+        if (objFromCache is null) return default;
+        
+        
+        existingCollection.Remove(objFromCache);
+        return await SetData(key, existingCollection);
+    }
 
     public async Task<object> RemoveData(string key)
     {
@@ -55,4 +101,10 @@ public class RedisRepository : IRedisRepository
 
         return false;
     }
+    
+   
+    
+    
+    
+    
 }

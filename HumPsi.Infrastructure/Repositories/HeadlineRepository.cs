@@ -3,6 +3,7 @@ using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace HumPsi.Infrastructure.Repositories;
@@ -11,17 +12,18 @@ public class HeadlineRepository(
     AppDbContext context,
     IRedisRepository redis,
     ILogger<HeadlineRepository> logger,
-    IPhotoRepository photoRepository) : IHeadlineRepository
+    IPhotoRepository photoRepository,
+    IConfiguration configuration) : IHeadlineRepository
 {
     public async Task<List<HeadlineEntity>> GetHeadline()
     {
-        // var headline = await redis.GetData<List<HeadlineEntity>>("Headline");
-        //
-        // if (headline is not null)
-        // {
-        //     logger.LogInformation("Get Headline from redis");
-        //     return headline;
-        // }
+        var headline = await redis.GetData<List<HeadlineEntity>>(configuration["HeadlineCache"]!);
+        
+        if (headline is not null)
+        {
+            logger.LogInformation("Get Headline from redis");
+            return headline;
+        }
 
         var headlineDb = await context.Headline
             .AsNoTracking()
@@ -33,35 +35,58 @@ public class HeadlineRepository(
         return headlineDb;
     }
 
-    public async Task<HeadlineEntity> CreateHeadline(IFormFile? file, HeadlineEntity headline)
+    public async Task<List<HeadlineEntity>> GetHeadlineFromSectionId(Guid sectionId)
     {
+        var headlineList = await GetHeadline();
+        
+        var result = headlineList
+            .Where(h => h.SectionId == sectionId)
+            .ToList();
+
+        if (result.Count == 0)
+            return [];
+
+        return result;
+    }
+
+    public async Task<(int code, string text)> CreateHeadline(IFormFile? file, HeadlineEntity headline)
+    {
+        if (await CheckExistItem(headline.Title))
+            return (0, $"Headline {headline.Title} already exist");
+        
         headline.PhotoPath = await photoRepository.UpdateImage(headline.Id, file, "headlinePhoto");
         
         await context.Headline.AddAsync(headline);
         await context.SaveChangesAsync();
+
+        await redis.AddItemToCollection(configuration["HeadlineCache"]!, headline);
          
-         return headline;
+        return (1, $"Headline {headline.Title} was create");
     }
 
-    public async Task<Guid> UpdateHeadline(Guid id, string title, IFormFile file)
+    public async Task<(int code, string text)> UpdateHeadline(HeadlineEntity headline, IFormFile? file)
     {
-        var updateDirectory = await photoRepository.UpdateImage(id, file, "headlinePhoto");
+        if (await CheckExistItem(headline.Title))
+            return (0, $"Headline {headline.Title} already exist");
+        
+        var updateDirectory = await photoRepository.UpdateImage(headline.Id, file, "headlinePhoto");
         try
         {
             await context.Headline
-                .Where(h => h.Id == id)
+                .Where(h => h.Id == headline.Id)
                 .ExecuteUpdateAsync(set => set
-                    .SetProperty(h => h.Title, title)
+                    .SetProperty(h => h.Title, headline.Title)
                     .SetProperty(h => h.PhotoPath, updateDirectory));
-            
+
+            await redis.UpdateItemToCollection(configuration["HeadlineCache"]!, h => h.Id == headline.Id, headline);
         }
         catch (InvalidOperationException e)
         {
-            var objFromDb = await context.Headline.FindAsync(id);
+            var objFromDb = await context.Headline.FindAsync(headline.Id);
             
             if (objFromDb is null) return default;
             
-            objFromDb.Title = title;
+            objFromDb.Title = headline.Title;
             objFromDb.PhotoPath = updateDirectory;
             context.Headline.Update(objFromDb);
             await context.SaveChangesAsync();
@@ -73,7 +98,7 @@ public class HeadlineRepository(
         }
         
 
-        return id;
+        return (1, $"Headline {headline.Title} was update");
     }
 
     public async Task<Guid> DeleteHeadline(Guid id)
@@ -81,10 +106,12 @@ public class HeadlineRepository(
         photoRepository.DeleteImage(id, "headlinePhoto");
         try
         {
-            
             await context.Headline
                 .Where(h => h.Id == id)
                 .ExecuteDeleteAsync();
+
+            await redis.DeleteItemToCollection<HeadlineEntity>(configuration["HeadlineCache"]!, h => h.Id == id);
+            
         }
         catch (InvalidOperationException e)
         {
@@ -103,5 +130,27 @@ public class HeadlineRepository(
         }
 
         return id;
+    }
+    
+    private async Task<bool> CheckExistItem(string headlineTitle)
+    {
+        var headlineCacheList = await redis.GetData<List<HeadlineEntity>>(configuration["HeadlineCache"]!);
+        
+        if (headlineCacheList is not null)
+        {
+            if (headlineCacheList.FirstOrDefault(h=>h.Title == headlineTitle) is not null)
+            {
+                logger.LogInformation("Check item from redis");
+                return true;
+            }
+        }
+    
+        if (await context.Headline.FirstOrDefaultAsync(h=>h.Title == headlineTitle) != null)
+        {
+            logger.LogInformation("Check item from Db");
+            return true;
+        }
+    
+        return false;
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
 
@@ -68,13 +69,13 @@ public class TestDbContext
     protected static async Task<SectionRepository> SectionRepository()
     {
         return new SectionRepository(await CreateDb(), MockRedis.Object,
-            new Mock<ILogger<SectionRepository>>().Object);
+            new Mock<ILogger<SectionRepository>>().Object, new Mock<IConfiguration>().Object);
     }
 
     protected static async Task<HeadlineRepository> HeadlineRepository()
     {
         return new HeadlineRepository(await CreateDb(), MockRedis.Object,
-            new Mock<ILogger<HeadlineRepository>>().Object, PhotoRepository());
+            new Mock<ILogger<HeadlineRepository>>().Object, PhotoRepository(), new Mock<IConfiguration>().Object);
     }
 
     private static PhotoRepository PhotoRepository()

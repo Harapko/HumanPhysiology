@@ -3,6 +3,7 @@ using HumPsi.Application.Command_Query.Headline.Commands.DeleteHeadlineCommand;
 using HumPsi.Application.Headline.Commands.CreateHeadlineCommand;
 using HumPsi.Application.Headline.Commands.UpdateHeadlineCommand;
 using HumPsi.Application.Headline.Queries;
+using HumPsi.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,26 +27,29 @@ public class HeadlineController(IMediator mediator,
     }
 
     [HttpPost]
-    public async Task<ActionResult<GetHeadlineDtoResponse>> CreateHeadlineAsync([FromForm] CreateHeadlineDto request)
+    public async Task<ActionResult<string>> CreateHeadlineAsync([FromForm] CreateHeadlineDtoRequest request)
     {
-        var result = await mediator.Send(new CreateHeadlineCommand(request.title, request.file, request.sectionId));
-        var response = mapper.Map<GetHeadlineDtoResponse>(result);
+        var headline = mapper.Map<HeadlineEntity>(request);
+        
+        var result = await mediator.Send(new CreateHeadlineCommand(request.file, headline));
 
-        if (response.id == Guid.Empty)
-            return BadRequest();
+        if (result.code == 0)
+            return BadRequest(result.text);
 
-        return response;
+        return Ok(new { massange = result.text});
     }
 
     [HttpPut]
     public async Task<ActionResult<string>> UpdateHeadlineAsync([FromForm] UpdateHeadlineDtoRequest request)
     {
-        var result = await mediator.Send(new UpdateHeadlineCommand(request.id, request.title, request.file));
+        var headline = mapper.Map<HeadlineEntity>(request);
         
-        if (result == Guid.Empty)
-            return BadRequest("Update is failure");
+        var result = await mediator.Send(new UpdateHeadlineCommand(headline, request.file));
+        
+        if (result.code == 0)
+            return BadRequest(result.text);
 
-        return Ok(new { message = $"Headline was updated on {request.title}" });
+        return Ok(new { message = result.text});
     }
 
     [HttpDelete]

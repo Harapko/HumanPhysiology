@@ -1,7 +1,5 @@
 using FluentAssertions;
-using HumPsi.Application.Section.Commands.CreateSectionCommand;
 using HumPsi.Domain.Entities;
-using HumPsi.Infrastructure.Repositories;
 using Xunit;
 
 namespace HumPsi.Test.Section.Commands;
@@ -23,7 +21,6 @@ public sealed class CreateSectionHandlerTest : TestDbContext
         var result = await repository.CreateSection(section);
         
         //Assert
-        result.Should().NotBeNull();
-        result.Should().BeOfType<SectionEntity>();
+        result.code.Should().Be(1);
     }
 }

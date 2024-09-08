@@ -1,5 +1,6 @@
+using HumPsi.Domain.Entities;
 using MediatR;
 
 namespace HumPsi.Application.Section.Commands.UpdateSectionCommand;
 
-public record UpdateSectionCommand(Guid id, string sectionName) : IRequest<Guid>{}
+public record UpdateSectionCommand(SectionEntity section) : IRequest<(int code, string text)>{}

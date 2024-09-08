@@ -25,8 +25,7 @@ public class CreateHeadlineCommandTest : TestDbContext
         var result = await repository.CreateHeadline(CreateFormFileFromDisk("/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/9d4095b3-e386-4f8e-9a27-d3c04a3cc127.png"), headline);
 
         //Assert
-        result.Should().NotBeNull();
-        result.Should().BeOfType<HeadlineEntity>();
+        result.code.Should().Be(1);
     }
     
     

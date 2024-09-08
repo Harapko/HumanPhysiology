@@ -4,18 +4,11 @@ using MediatR;
 
 namespace HumPsi.Application.Headline.Commands.CreateHeadlineCommand;
 
-public class CreateHeadlineHandler(IHeadlineRepository repository) : IRequestHandler<CreateHeadlineCommand, HeadlineEntity>
+public class CreateHeadlineHandler(IHeadlineRepository repository) : IRequestHandler<CreateHeadlineCommand, (int code, string text)>
 {
-    public async Task<HeadlineEntity> Handle(CreateHeadlineCommand request, CancellationToken cancellationToken)
+    public async Task<(int code, string text)> Handle(CreateHeadlineCommand request, CancellationToken cancellationToken)
     {
-        var headline = new HeadlineEntity
-        {
-            Id = request.Id,
-            Title = request.title,
-            SectionId = request.sectionId
-        };
-
-        var result = await repository.CreateHeadline(request.file, headline);
+        var result = await repository.CreateHeadline(request.file, request.headline);
 
         return result;
     }

@@ -4,17 +4,11 @@ using MediatR;
 
 namespace HumPsi.Application.Section.Commands.CreateSectionCommand;
 
-public class CreateSectionHandler(ISectionRepository repository) : IRequestHandler<CreateSectionCommand, SectionEntity>
+public class CreateSectionHandler(ISectionRepository repository) : IRequestHandler<CreateSectionCommand, (int code, string text)>
 {
-    public async Task<SectionEntity> Handle(CreateSectionCommand request, CancellationToken cancellationToken)
+    public async Task<(int code, string text)> Handle(CreateSectionCommand request, CancellationToken cancellationToken)
     {
-        var section = new SectionEntity
-        {
-            Id = request.Id,
-            SectionName = request.title
-        };
-
-        var result = await repository.CreateSection(section);
+        var result = await repository.CreateSection(request.section);
         return result;
     }
 }

@@ -7,6 +7,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 {
     public DbSet<SectionEntity> Section { get; init; }
     public DbSet<HeadlineEntity> Headline { get; init; }
+    public DbSet<ArticleEntity> Article { get; init; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

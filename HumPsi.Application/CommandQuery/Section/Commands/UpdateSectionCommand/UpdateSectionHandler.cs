@@ -3,11 +3,11 @@ using MediatR;
 
 namespace HumPsi.Application.Section.Commands.UpdateSectionCommand;
 
-public class UpdateSectionHandler(ISectionRepository repository) : IRequestHandler<UpdateSectionCommand, Guid>
+public class UpdateSectionHandler(ISectionRepository repository) : IRequestHandler<UpdateSectionCommand, (int code, string text)>
 {
-    public async Task<Guid> Handle(UpdateSectionCommand request, CancellationToken cancellationToken)
+    public async Task<(int code, string text)> Handle(UpdateSectionCommand request, CancellationToken cancellationToken)
     {
-        var result = await repository.UpdateSection(request.id, request.sectionName);
+        var result = await repository.UpdateSection(request.section);
 
         return result;
     }

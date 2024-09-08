@@ -22,6 +22,34 @@ namespace HumPsi.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("HumPsi.Domain.Entities.ArticleEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("HeadlineId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("character varying(25)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HeadlineId");
+
+                    b.ToTable("Article");
+                });
+
             modelBuilder.Entity("HumPsi.Domain.Entities.HeadlineEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -37,7 +65,8 @@ namespace HumPsi.Infrastructure.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(25)
+                        .HasColumnType("character varying(25)");
 
                     b.HasKey("Id");
 
@@ -54,11 +83,23 @@ namespace HumPsi.Infrastructure.Migrations
 
                     b.Property<string>("SectionName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(25)
+                        .HasColumnType("character varying(25)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Section");
+                });
+
+            modelBuilder.Entity("HumPsi.Domain.Entities.ArticleEntity", b =>
+                {
+                    b.HasOne("HumPsi.Domain.Entities.HeadlineEntity", "HeadlineEntity")
+                        .WithMany("ArticleEntities")
+                        .HasForeignKey("HeadlineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HeadlineEntity");
                 });
 
             modelBuilder.Entity("HumPsi.Domain.Entities.HeadlineEntity", b =>
@@ -70,6 +111,11 @@ namespace HumPsi.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("SectionEntity");
+                });
+
+            modelBuilder.Entity("HumPsi.Domain.Entities.HeadlineEntity", b =>
+                {
+                    b.Navigation("ArticleEntities");
                 });
 
             modelBuilder.Entity("HumPsi.Domain.Entities.SectionEntity", b =>

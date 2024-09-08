@@ -12,12 +12,17 @@ public class UpdateSectionHandlerTest : TestDbContext
     {
         //Arrange
         var repository = await SectionRepository();
+        var updatedSection = new SectionEntity
+        {
+            Id = Guid.Parse("0C345C9D-543F-48A5-AEE8-59ACCD0B95E8"),
+            SectionName = "SectionTestUpdate"
+        };
 
         //Act
-        var result = await repository.UpdateSection(Guid.Parse("A5C8DB17-CDDC-4E9D-8C23-4B0C89A94AF9"), "SectionTestUpdate");
+        var result = await repository.UpdateSection(updatedSection);
 
         //Assert
-        result.Should().NotBeEmpty();
+        result.code.Should().Be(1);
     }
     
 }

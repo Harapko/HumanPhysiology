@@ -17,7 +17,7 @@ namespace HumPsi.Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Title = table.Column<string>(type: "text", nullable: false),
-                    PhotoPath = table.Column<string>(type: "text", nullable: false),
+                    PhotoPath = table.Column<string>(type: "text", nullable: true),
                     SectionId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>

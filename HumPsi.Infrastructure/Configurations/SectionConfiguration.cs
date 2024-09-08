@@ -16,5 +16,14 @@ public class SectionConfiguration : IEntityTypeConfiguration<SectionEntity>
             .HasMany(s => s.Headlines)
             .WithOne(h => h.SectionEntity)
             .HasForeignKey(h => h.SectionId);
+
+        builder
+            .Property(a => a.Id)
+            .IsRequired();
+
+        builder
+            .Property(s => s.SectionName)
+            .IsRequired()
+            .HasMaxLength(25);
     }
 }

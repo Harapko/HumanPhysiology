@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Http;
 
 namespace HumPsi.Application.Headline.Commands.CreateHeadlineCommand;
 
-public record CreateHeadlineDto(
+public record CreateHeadlineDtoRequest(
     string title,
-    IFormFile file,
+    IFormFile? file,
     Guid sectionId
     );
