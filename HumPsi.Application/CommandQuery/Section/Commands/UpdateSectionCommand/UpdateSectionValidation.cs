@@ -6,10 +6,10 @@ public class UpdateSectionValidation : AbstractValidator<UpdateSectionCommand>
 {
     public UpdateSectionValidation()
     {
-        RuleFor(s => s.section.Id)
+        RuleFor(s => s.request.id)
             .NotNull().WithMessage("Id isn`t be bull");
         
-        RuleFor(s => s.section.SectionName)
+        RuleFor(s => s.request.sectionName)
             .NotNull().WithMessage("Section title isn`t be bull")
             .MaximumLength(20).WithMessage("Max length is 20");
     }

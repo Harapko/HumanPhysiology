@@ -4,5 +4,6 @@ public record GetArticleDtoResponse(
     Guid id,
     string title,
     string content,
-    DateTime createAt
+    DateTime createAt,
+    string photoPath
 );

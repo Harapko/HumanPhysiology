@@ -1,9 +1,8 @@
-using AutoMapper;
 using HumPsi.Application.Command_Query.Headline.Commands.DeleteHeadlineCommand;
+using HumPsi.Application.CommandQuery.Headline.Queries.GetHeadlineFromSectionIdQuery;
 using HumPsi.Application.Headline.Commands.CreateHeadlineCommand;
 using HumPsi.Application.Headline.Commands.UpdateHeadlineCommand;
 using HumPsi.Application.Headline.Queries;
-using HumPsi.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,40 +10,46 @@ namespace HumPsi.Api.Controllers;
 
 [ApiController]
 [Route("[action]")]
-public class HeadlineController(IMediator mediator,
-    IMapper mapper) : ControllerBase
+public class HeadlineController(IMediator mediator) : ControllerBase
 {
     [HttpGet]
     public async Task<ActionResult<List<GetHeadlineDtoResponse>>> GetHeadlineAsync()
     {
         var result = await mediator.Send(new GetAllHeadlineQuery());
-        var response = mapper.Map<List<GetHeadlineDtoResponse>>(result);
 
         if (result.Count == 0)
             return BadRequest("Headline not found or null");
 
-        return response;
+        return result;
     }
+
+    [HttpGet]
+    public async Task<ActionResult<List<GetHeadlineDtoResponse>>> GetHeadlineFromSectionIdAsync(Guid sectionId)
+    {
+        var result = await mediator.Send(new GetHeadlineFromSectionIdQuery(sectionId));
+
+        if (result.Count == 0)
+            return BadRequest("Headline not found or null");
+
+        return result;
+    }
+        
 
     [HttpPost]
     public async Task<ActionResult<string>> CreateHeadlineAsync([FromForm] CreateHeadlineDtoRequest request)
     {
-        var headline = mapper.Map<HeadlineEntity>(request);
-        
-        var result = await mediator.Send(new CreateHeadlineCommand(request.file, headline));
+        var result = await mediator.Send(new CreateHeadlineCommand(request.file, request));
 
         if (result.code == 0)
             return BadRequest(result.text);
 
-        return Ok(new { massange = result.text});
+        return Ok(new { message = result.text});
     }
 
     [HttpPut]
     public async Task<ActionResult<string>> UpdateHeadlineAsync([FromForm] UpdateHeadlineDtoRequest request)
     {
-        var headline = mapper.Map<HeadlineEntity>(request);
-        
-        var result = await mediator.Send(new UpdateHeadlineCommand(headline, request.file));
+        var result = await mediator.Send(new UpdateHeadlineCommand(request, request.file));
         
         if (result.code == 0)
             return BadRequest(result.text);

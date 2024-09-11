@@ -3,4 +3,4 @@ using MediatR;
 
 namespace HumPsi.Application.CommandQuery.Article.Commands.CreateArticleCommand;
 
-public record CreateArticleCommand(ArticleEntity article) : IRequest<Guid>;
+public record CreateArticleCommand(CreateArticleDtoRequest request) : IRequest<(int code, string text)>;

@@ -1,14 +1,18 @@
+using AutoMapper;
 using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
 using MediatR;
 
 namespace HumPsi.Application.Headline.Queries;
 
-public class GetAllHeadlineHandler(IHeadlineRepository repository) : IRequestHandler<GetAllHeadlineQuery, List<HeadlineEntity>>
+public class GetAllHeadlineHandler(IHeadlineRepository repository, IMapper mapper) : IRequestHandler<GetAllHeadlineQuery, List<GetHeadlineDtoResponse>>
 {
-    public async Task<List<HeadlineEntity>> Handle(GetAllHeadlineQuery request, CancellationToken cancellationToken)
+    public async Task<List<GetHeadlineDtoResponse>> Handle(GetAllHeadlineQuery request, CancellationToken cancellationToken)
     {
         var headlines = await repository.GetHeadline();
-        return headlines;
+        
+        var result = mapper.Map<List<GetHeadlineDtoResponse>>(headlines);
+        
+        return result;
     }
 }

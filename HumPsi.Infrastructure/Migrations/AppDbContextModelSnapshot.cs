@@ -38,6 +38,10 @@ namespace HumPsi.Infrastructure.Migrations
                     b.Property<Guid>("HeadlineId")
                         .HasColumnType("uuid");
 
+                    b.Property<string>("PhotoPath")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(25)
@@ -57,7 +61,6 @@ namespace HumPsi.Infrastructure.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("PhotoPath")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<Guid>("SectionId")

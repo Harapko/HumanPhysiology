@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Http;
+
 namespace HumPsi.Application.CommandQuery.Article.Commands.CreateArticleCommand;
 
 public record CreateArticleDtoRequest(
-    Guid id,
     string title,
     string content,
-    DateTime createAt,
+    DateTime? createAt,
+    IFormFile? file,
     Guid headlineId
     );

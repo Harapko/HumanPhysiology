@@ -3,7 +3,7 @@ using MediatR;
 
 namespace HumPsi.Application.Section.Queries.GetAllSectionQuery;
 
-public record GetAllSectionQuery : IRequest<List<SectionEntity>>
+public record GetAllSectionQuery : IRequest<List<GetSectionDtoResponse>>
 {
     
 }

@@ -1,17 +1,20 @@
+using AutoMapper;
+using HumPsi.Application.CommandQuery.Article.Queries.GetAllArticleQuery;
 using HumPsi.Domain.Abstraction.IRepositories;
-using HumPsi.Domain.Entities;
 using MediatR;
 
 namespace HumPsi.Application.CommandQuery.Article.Queries.GetArticleForHeadlineIdQuery;
 
-public class GetArticleFromHeadlineHandler(IArticleRepository repository) : IRequestHandler<GetArticleFromHeadlineIdQuery, List<ArticleEntity>>
+public class GetArticleFromHeadlineHandler(IArticleRepository repository, IMapper mapper) : IRequestHandler<GetArticleFromHeadlineIdQuery, List<GetArticleDtoResponse>>
 {
-    public async Task<List<ArticleEntity>> Handle(GetArticleFromHeadlineIdQuery request, CancellationToken cancellationToken)
+    public async Task<List<GetArticleDtoResponse>> Handle(GetArticleFromHeadlineIdQuery request, CancellationToken cancellationToken)
     {
-        var result = await repository.GetFromHeadlineId(request.headlineId);
+        var article = await repository.GetFromHeadlineId(request.headlineId);
 
-        if (result.Count == 0)
+        if (article.Count == 0)
             return [];
+
+        var result = mapper.Map<List<GetArticleDtoResponse>>(article);
 
         return result;
     }

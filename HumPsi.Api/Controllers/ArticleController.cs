@@ -1,8 +1,9 @@
 using AutoMapper;
 using HumPsi.Application.CommandQuery.Article.Commands.CreateArticleCommand;
+using HumPsi.Application.CommandQuery.Article.Commands.DeleteArticleCommand;
+using HumPsi.Application.CommandQuery.Article.Commands.UpdateArticleCommand;
 using HumPsi.Application.CommandQuery.Article.Queries.GetAllArticleQuery;
 using HumPsi.Application.CommandQuery.Article.Queries.GetArticleForHeadlineIdQuery;
-using HumPsi.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,20 +11,17 @@ namespace HumPsi.Api.Controllers;
 
 [ApiController]
 [Route("[action]")]
-public class ArticleController(
-    IMediator mediator,
-    IMapper mapper) : ControllerBase
+public class ArticleController(IMediator mediator) : ControllerBase
 {
     [HttpGet]
     public async Task<ActionResult<List<GetArticleDtoResponse>>> GetAllArticlesAsync()
     {
         var result = await mediator.Send(new GetAllArticleQuery());
 
-        var response = mapper.Map<List<GetArticleDtoResponse>>(result);
         if (result.Count == 0)
             return BadRequest("Article not found or null");
 
-        return response;
+        return result;
     }
 
     [HttpGet]
@@ -33,22 +31,37 @@ public class ArticleController(
 
         if (result.Count == 0)
             return BadRequest("Article not found or null");
-
-        var response = mapper.Map<List<GetArticleDtoResponse>>(result);
-
-        return response;
+        
+        return result;
     }
 
     [HttpPost]
-    public async Task<ActionResult<Guid>> CreateArticleAsync([FromBody] CreateArticleDtoRequest request)
+    public async Task<ActionResult<string>> CreateArticleAsync([FromForm] CreateArticleDtoRequest request)
     {
-        var article = mapper.Map<ArticleEntity>(request);
+        var result = await mediator.Send(new CreateArticleCommand(request));
 
-        var result = await mediator.Send(new CreateArticleCommand(article));
+        if (result.code == 0)
+            return BadRequest(result.text);
 
-        if (result == Guid.Empty)
-            return BadRequest("Create Article wrong");
+        return Ok(new {message = result.text});
+    }
 
-        return result;
+    [HttpPut]
+    public async Task<ActionResult<string>> UpdateArticleAsync([FromForm] UpdateArticleDtoRequest request)
+    {
+        var result = await mediator.Send(new UpdateArticleCommand(request));
+
+        if (result.code == 0)
+            return BadRequest(result.text);
+
+        return result.text;
+    }
+
+    [HttpDelete]
+    public async Task<ActionResult<string>> DeleteArticleAsync(Guid id)
+    {
+        var result = await mediator.Send(new DeleteArticleCommand(id));
+
+        return Ok(new { message = $"Article {result} was delete" });
     }
 }

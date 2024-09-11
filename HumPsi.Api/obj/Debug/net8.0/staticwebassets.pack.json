@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/Article/0db9b491-8f90-45ee-b500-c5ef30050c68.png",
+      "PackagePath": "staticwebassets/Article/0db9b491-8f90-45ee-b500-c5ef30050c68.png"
+    },
+    {
       "Id": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png",
       "PackagePath": "staticwebassets/headlinePhoto/90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png"
     },

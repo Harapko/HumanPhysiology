@@ -1,4 +1,5 @@
 using HumPsi.Domain.Entities;
+using Microsoft.AspNetCore.Http;
 
 namespace HumPsi.Domain.Abstraction.IRepositories;
 
@@ -6,7 +7,8 @@ public interface IArticleRepository
 {
     public Task<List<ArticleEntity>> Get();
     public Task<List<ArticleEntity>> GetFromHeadlineId(Guid headlineId);
-    public Task<Guid> CreateArticle(ArticleEntity article);
-    public Task<Guid> UpdateArticle(Guid id, string title, string content, DateTime createAt, Guid headlineId);
+    public Task<(int code, string text)> CreateArticle(ArticleEntity article, IFormFile? file);
+    public Task<(int code, string text)> UpdateArticle(ArticleEntity article, IFormFile? file);
     public Task<Guid> DeleteArticle(Guid id);
+    
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "71k5DfmQElZ8BGp8vvWz52lE1Xu4tnTMq0rK5y9loKg=",
+  "Hash": "0mhTUJYaHrnc8Of5Yqvf4+tz2f2Putk4AQHpkyMjLZE=",
   "Source": "HumPsi.Api",
   "BasePath": "_content/HumPsi.Api",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/Article/0db9b491-8f90-45ee-b500-c5ef30050c68.png",
+      "SourceId": "HumPsi.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/",
+      "BasePath": "_content/HumPsi.Api",
+      "RelativePath": "Article/0db9b491-8f90-45ee-b500-c5ef30050c68.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Article/0db9b491-8f90-45ee-b500-c5ef30050c68.png"
+    },
     {
       "Identity": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/wwwroot/headlinePhoto/90cf47ed-8ad2-4f9b-b92a-9c4925023f2a.png",
       "SourceId": "HumPsi.Api",

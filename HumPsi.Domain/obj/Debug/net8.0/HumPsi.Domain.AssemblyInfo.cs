@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HumPsi.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb88a71e30568a3bece9fe26f9745053c9632c76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9390c0758172b3b44c8b225a381fed0d5227bd9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("HumPsi.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HumPsi.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

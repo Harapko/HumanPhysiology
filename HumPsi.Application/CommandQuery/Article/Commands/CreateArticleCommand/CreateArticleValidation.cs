@@ -6,17 +6,14 @@ public class CreateArticleValidation : AbstractValidator<CreateArticleCommand>
 {
     public CreateArticleValidation()
     {
-        RuleFor(a => a.article.Id)
-            .NotEmpty().WithMessage("Article id isn`t be empty");
-        
-        RuleFor(a => a.article.Title)
+        RuleFor(a => a.request.title)
             .NotEmpty().WithMessage("Article title isn`t be empty")
             .MaximumLength(25).WithMessage("Maximum Length is 25");
 
-        RuleFor(a => a.article.Content)
+        RuleFor(a => a.request.content)
             .NotEmpty().WithMessage("Article content can`t be empty");
         
-        RuleFor(a => a.article.HeadlineId)
+        RuleFor(a => a.request.headlineId)
             .NotEmpty().WithMessage("Article must have headline id");
     }
 }

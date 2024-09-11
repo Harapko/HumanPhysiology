@@ -11,39 +11,34 @@ namespace HumPsi.Api.Controllers;
 
 [ApiController]
 [Route("[action]")]
-public class SectionController(IMediator mediator,
-    IMapper mapper) : ControllerBase
+public class SectionController(IMediator mediator) : ControllerBase
 {
     [HttpGet]
     public async Task<ActionResult<List<GetSectionDtoResponse>>> GetAllSectionAsync()
     {
         var result = await mediator.Send(new GetAllSectionQuery());
-        var response = mapper.Map<List<GetSectionDtoResponse>>(result);
 
-        if (response.Count == 0)
+        if (result.Count == 0)
             return NotFound("Section not found or null");
 
-        return response;
+        return result;
     }
 
     [HttpPost]
     public async Task<ActionResult<string>> CreateSectionAsync([FromBody] CreateSectionDtoRequest request)
     {
-        var section = mapper.Map<SectionEntity>(request);
-        
-        var result = await mediator.Send(new CreateSectionCommand(section));
+        var result = await mediator.Send(new CreateSectionCommand(request));
 
         if (result.code == 0)
             return BadRequest(result.text);
 
-        return Ok(new {massage = result.text});
+        return Ok(new {message = result.text});
     }
 
     [HttpPut]
     public async Task<ActionResult<string>> UpdateSectionAsync([FromBody] UpdateSectionDtoRequest request)
     {
-        var section = mapper.Map<SectionEntity>(request);
-        var result = await mediator.Send(new UpdateSectionCommand(section));
+        var result = await mediator.Send(new UpdateSectionCommand(request));
         
         if (result.code == 0)
             return BadRequest(result.text);

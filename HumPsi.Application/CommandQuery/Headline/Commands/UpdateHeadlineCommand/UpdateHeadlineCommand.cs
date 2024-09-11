@@ -4,4 +4,4 @@ using Microsoft.AspNetCore.Http;
 
 namespace HumPsi.Application.Headline.Commands.UpdateHeadlineCommand;
 
-public record UpdateHeadlineCommand(HeadlineEntity headline, IFormFile? File) : IRequest<(int code, string text)>;
+public record UpdateHeadlineCommand(UpdateHeadlineDtoRequest request, IFormFile? File) : IRequest<(int code, string text)>;
