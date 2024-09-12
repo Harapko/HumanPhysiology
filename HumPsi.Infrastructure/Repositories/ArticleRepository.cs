@@ -75,7 +75,7 @@ public class ArticleRepository(
                 .ExecuteUpdateAsync(set => set
                     .SetProperty(a => a.Title, article.Title)
                     .SetProperty(a => a.Content, article.Content)
-                    .SetProperty(a => a.CreateAt, article.CreateAt)
+                    .SetProperty(a => a.CreateAt, DateTime.Now)
                     .SetProperty(a => a.HeadlineId, article.HeadlineId));
             
             await photoRepository.UpdateImage(article.Id, file, "Article");
@@ -84,7 +84,17 @@ public class ArticleRepository(
         }
         catch (InvalidOperationException e)
         {
+            var objFromDb = await context.Article.FindAsync(article.Id);
             
+            if(objFromDb is null)
+                return (0, $"Article isn`t exist");
+            
+            objFromDb.Title = article.Title;
+            objFromDb.Content = article.Content;
+            objFromDb.CreateAt = DateTime.Now;
+            objFromDb.HeadlineId = article.HeadlineId;
+
+            context.Article.Update(objFromDb);
         }
         catch (Exception e)
         {
@@ -95,7 +105,7 @@ public class ArticleRepository(
         return (1, $"Article {article.Title} was update");
     }
 
-    public async Task<Guid> DeleteArticle(Guid id)
+    public async Task<string> DeleteArticle(Guid id)
     {
         try
         {
@@ -108,7 +118,12 @@ public class ArticleRepository(
         }
         catch (InvalidOperationException e)
         {
+            var objFromDb = await context.Article.FindAsync(id);
             
+            if(objFromDb is null)
+                return "Article isn`t exist";
+            
+            context.Remove(objFromDb);
         }
         catch (Exception e)
         {
@@ -116,7 +131,7 @@ public class ArticleRepository(
             throw;
         }
 
-        return id;
+        return "Article was delete";
     }
     
     private async Task<bool> CheckExistItem(string articleTitle)

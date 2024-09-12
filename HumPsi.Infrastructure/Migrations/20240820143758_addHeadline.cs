@@ -33,7 +33,7 @@ namespace HumPsi.Infrastructure.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Headline_SectionId",
-                table: "Headline",
+                table: "Headline", 
                 column: "SectionId");
         }
 

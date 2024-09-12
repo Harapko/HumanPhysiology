@@ -7,7 +7,7 @@ namespace HumPsi.Test.Headline.Commands;
 public class CreateHeadlineCommandTest : TestDbContext
 {
     [Fact]
-    public async Task Handle_Should_ReturnHeadlineEntity_IfCreationIsTrue()
+    public async Task Handle_Should_ReturnOne_IfCreationIsTrue()
     {
         //Arrange
         var repository = await HeadlineRepository();

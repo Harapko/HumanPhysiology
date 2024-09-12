@@ -9,6 +9,6 @@ public interface IArticleRepository
     public Task<List<ArticleEntity>> GetFromHeadlineId(Guid headlineId);
     public Task<(int code, string text)> CreateArticle(ArticleEntity article, IFormFile? file);
     public Task<(int code, string text)> UpdateArticle(ArticleEntity article, IFormFile? file);
-    public Task<Guid> DeleteArticle(Guid id);
+    public Task<string> DeleteArticle(Guid id);
     
 }
