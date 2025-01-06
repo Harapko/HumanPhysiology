@@ -1,0 +1,13 @@
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/bin/Debug/net9.0/HumPsi.Domain.deps.json
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/bin/Debug/net9.0/HumPsi.Domain.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/bin/Debug/net9.0/HumPsi.Domain.pdb
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.csproj.AssemblyReference.cache
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.AssemblyInfoInputs.cache
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.AssemblyInfo.cs
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.csproj.CoreCompileInputs.cache
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.sourcelink.json
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/refint/HumPsi.Domain.dll
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/HumPsi.Domain.pdb
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/obj/Debug/net9.0/ref/HumPsi.Domain.dll
