@@ -1,8 +1,8 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "MediatR/12.4.0": {
+    "net9.0": {
+      "MediatR/12.4.1": {
         "type": "package",
         "dependencies": {
           "MediatR.Contracts": "[2.0.1, 3.0.0)",
@@ -69,19 +69,19 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "Microsoft.AspNetCore.Http.Features/6.0.0-preview.4.21253.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.1",
-          "System.IO.Pipelines": "5.0.2"
+          "Microsoft.Extensions.Primitives": "6.0.0-preview.4.21253.7",
+          "System.IO.Pipelines": "6.0.0-preview.4.21253.7"
         },
         "compile": {
-          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+          "lib/net6.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+          "lib/net6.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         }
@@ -150,8 +150,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Primitives/5.0.1": {
+      "Microsoft.Extensions.Primitives/6.0.0-preview.4.21253.7": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0-preview.4.21253.7"
+        },
         "compile": {
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
@@ -198,7 +201,7 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.IO.Pipelines/5.0.2": {
+      "System.IO.Pipelines/6.0.0-preview.4.21253.7": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/System.IO.Pipelines.dll": {
@@ -207,6 +210,19 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.4.21253.7": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         }
@@ -227,10 +243,10 @@
     }
   },
   "libraries": {
-    "MediatR/12.4.0": {
-      "sha512": "s8xhhvsTQqt7jI1XeVqcniiph/QoRmJb1qxVgk7UFpAgOzpzZ0VTl8zV+lFJgxISVqZuJRjmxF+P3AuHyelCrg==",
+    "MediatR/12.4.1": {
+      "sha512": "0tLxCgEC5+r1OCuumR3sWyiVa+BMv3AgiU4+pz8xqTc+2q1WbUEXFOr7Orm96oZ9r9FsldgUtWvB2o7b9jDOaw==",
       "type": "package",
-      "path": "mediatr/12.4.0",
+      "path": "mediatr/12.4.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -240,7 +256,7 @@
         "lib/net6.0/MediatR.xml",
         "lib/netstandard2.0/MediatR.dll",
         "lib/netstandard2.0/MediatR.xml",
-        "mediatr.12.4.0.nupkg.sha512",
+        "mediatr.12.4.1.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
@@ -284,10 +300,10 @@
         "microsoft.aspnetcore.http.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Features/5.0.17": {
-      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+    "Microsoft.AspNetCore.Http.Features/6.0.0-preview.4.21253.5": {
+      "sha512": "R3MUGcafdytxU9Bv5PWy46MPlHtPLgjCX9ay+Y7VPyvaxtpCijz6tMBUPletOUeAcmyYpwBgWU1FwdyuZn0n8w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "path": "microsoft.aspnetcore.http.features/6.0.0-preview.4.21253.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -295,11 +311,11 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
         "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
-        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
-        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net6.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Http.Features.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.6.0.0-preview.4.21253.5.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
@@ -374,10 +390,10 @@
         "microsoft.extensions.options.nuspec"
       ]
     },
-    "Microsoft.Extensions.Primitives/5.0.1": {
-      "sha512": "5WPSmL4YeP7eW+Vc8XZ4DwjYWBAiSwDV9Hm63JJWcz1Ie3Xjv4KuJXzgCstj48LkLfVCYa7mLcx7y+q6yqVvtw==",
+    "Microsoft.Extensions.Primitives/6.0.0-preview.4.21253.7": {
+      "sha512": "6/lDuT2adENTB3xv33imDINOlk12FjhNagH2LCZ0+dc3UNke05DekLz9kSKVQufcvcWbNzzuxO5ucMJ94qQdBQ==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/5.0.1",
+      "path": "microsoft.extensions.primitives/6.0.0-preview.4.21253.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -390,10 +406,8 @@
         "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.5.0.1.nupkg.sha512",
-        "microsoft.extensions.primitives.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "microsoft.extensions.primitives.6.0.0-preview.4.21253.7.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
       ]
     },
     "Microsoft.Net.Http.Headers/2.2.0": {
@@ -527,10 +541,10 @@
         "version.txt"
       ]
     },
-    "System.IO.Pipelines/5.0.2": {
-      "sha512": "Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
+    "System.IO.Pipelines/6.0.0-preview.4.21253.7": {
+      "sha512": "vFgm2rr53rp46mFmO+ihwVf9zOZu4sA11ULmCbmvrYEG3XR45ql1CYBSEEsntMQeZG0B/qiOOifnLTxB5G1C0A==",
       "type": "package",
-      "path": "system.io.pipelines/5.0.2",
+      "path": "system.io.pipelines/6.0.0-preview.4.21253.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -547,10 +561,38 @@
         "lib/netstandard2.0/System.IO.Pipelines.xml",
         "ref/netcoreapp2.0/System.IO.Pipelines.dll",
         "ref/netcoreapp2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.5.0.2.nupkg.sha512",
-        "system.io.pipelines.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.io.pipelines.6.0.0-preview.4.21253.7.nupkg.sha512",
+        "system.io.pipelines.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0-preview.4.21253.7": {
+      "sha512": "rOTMSKPvs0Wgmne/DaGxFUiD4gcvzzEUvgPtRbJ3MQHVK2wIgNlQUyMPt8Ny6RwzNo5odbfDpwNZy4cfkkc7mA==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0-preview.4.21253.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0-preview.4.21253.7.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec"
       ]
     },
     "System.Text.Encodings.Web/4.5.0": {
@@ -574,10 +616,10 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "MediatR >= 12.4.0",
+    "net9.0": [
+      "MediatR >= 12.4.1",
       "Microsoft.AspNetCore.Http >= 2.2.2",
-      "Microsoft.AspNetCore.Http.Features >= 5.0.17"
+      "Microsoft.AspNetCore.Http.Features >= 6.0.0-preview.4.21253.5"
     ]
   },
   "packageFolders": {
@@ -596,14 +638,14 @@
         "/Users/maks/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net9.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {}
         }
       },
@@ -611,15 +653,21 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "dependencies": {
           "MediatR": {
             "target": "Package",
-            "version": "[12.4.0, )"
+            "version": "[12.4.1, )"
           },
           "Microsoft.AspNetCore.Http": {
             "target": "Package",
@@ -627,7 +675,7 @@
           },
           "Microsoft.AspNetCore.Http.Features": {
             "target": "Package",
-            "version": "[5.0.17, )"
+            "version": "[6.0.0-preview.4.21253.5, )"
           }
         },
         "imports": [
@@ -646,7 +694,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
