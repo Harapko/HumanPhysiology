@@ -20,7 +20,8 @@ public static  class DependencyInjection
 
         services.AddMediatR(config => config.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
         services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
-        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        var currentAssemblies = AppDomain.CurrentDomain.GetAssemblies();
+        services.AddAutoMapper(currentAssemblies);
         services.AddStackExchangeRedisCache(options =>
             options.Configuration = redisConnStr);
 

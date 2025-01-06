@@ -413,7 +413,10 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
         },
         "runtime": {
-          "HumPsi.Domain.dll": {}
+          "HumPsi.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "HumPsi.Infrastructure/1.0.0": {
@@ -433,7 +436,10 @@
           "StackExchange.Redis": "2.8.0"
         },
         "runtime": {
-          "HumPsi.Infrastructure.dll": {}
+          "HumPsi.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/8.0.0.0": {
