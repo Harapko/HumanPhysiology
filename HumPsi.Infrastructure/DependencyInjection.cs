@@ -1,9 +1,8 @@
+
 using FluentValidation;
-using HumPsi.Application.Abstraction.IService;
 using HumPsi.Domain;
 using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Abstraction.IRepositories.@base;
-using HumPsi.Infrastructure.Realizations.Service;
 using HumPsi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
@@ -33,8 +32,8 @@ public static  class DependencyInjection
         services.AddScoped<IHeadlineRepository, HeadlineRepository>();
         services.AddScoped<IPhotoRepository, PhotoRepository>();
         services.AddScoped<IArticleRepository, ArticleRepository>();
-        services.AddScoped<ILoggerService, LoggerService>();
-        
+        services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+        services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
         
         
         return services;

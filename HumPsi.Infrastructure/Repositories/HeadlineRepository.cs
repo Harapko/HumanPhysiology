@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace HumPsi.Infrastructure.Repositories;
 
 public class HeadlineRepository(
-    AppDbContext context,
+    HumPsiDbContext context,
     IRedisRepository redis,
     ILogger<HeadlineRepository> logger,
     IPhotoRepository photoRepository,
