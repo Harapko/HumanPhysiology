@@ -17,14 +17,14 @@
           "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
               "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj": {
                 "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Application/HumPsi.Application.csproj"
@@ -39,15 +39,21 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.4.1, )"
             },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
@@ -55,21 +61,21 @@
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[7.2.0, )"
             }
           },
           "imports": [
@@ -91,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -108,14 +114,14 @@
           "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
               "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {
                 "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj"
@@ -130,31 +136,33 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[13.0.1, )"
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.9.2, )"
+              "version": "[12.0.0-preview1, )"
             },
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
-              "version": "[11.9.2, )"
+              "version": "[12.0.0-preview1, )"
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.4.1, )"
             },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
@@ -162,15 +170,15 @@
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[9.0.0, )"
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.8.0, )"
+              "version": "[2.8.24, )"
             }
           },
           "imports": [
@@ -189,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -206,14 +214,14 @@
           "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -221,15 +229,21 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.4.1, )"
             },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
@@ -237,7 +251,7 @@
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
             }
           },
           "imports": [
@@ -256,7 +270,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -273,14 +287,14 @@
           "/Users/maks/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
               "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj": {
                 "projectPath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj"
@@ -292,31 +306,33 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[13.0.1, )"
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.9.2, )"
+              "version": "[12.0.0-preview1, )"
             },
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
-              "version": "[11.9.2, )"
+              "version": "[12.0.0-preview1, )"
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[12.4.1, )"
             },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
@@ -324,33 +340,33 @@
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.2, )"
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.8.0, )"
+              "version": "[2.8.24, )"
             }
           },
           "imports": [
@@ -369,7 +385,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

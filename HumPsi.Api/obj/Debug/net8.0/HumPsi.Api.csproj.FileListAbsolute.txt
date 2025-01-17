@@ -362,3 +362,6 @@ C:/Users/bakud/RiderProjects/HumanPhysiology/HumPsi.Api/obj/Debug/net8.0/ref/Hum
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/bin/Debug/net8.0/StackExchange.Redis.dll
 /Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/bin/Debug/net8.0/HumPsi.Api.staticwebassets.runtime.json
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/bin/Debug/net8.0/HumPsi.Api.staticwebassets.endpoints.json
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api/obj/Debug/net8.0/staticwebassets/msbuild.HumPsi.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
