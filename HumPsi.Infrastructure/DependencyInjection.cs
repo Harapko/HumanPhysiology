@@ -1,6 +1,9 @@
 using FluentValidation;
+using HumPsi.Application.Abstraction.IService;
 using HumPsi.Domain;
 using HumPsi.Domain.Abstraction.IRepositories;
+using HumPsi.Domain.Abstraction.IRepositories.@base;
+using HumPsi.Infrastructure.Realizations.Service;
 using HumPsi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
@@ -15,8 +18,8 @@ public static  class DependencyInjection
     {
         var redisConnStr = configuration.GetConnectionString(nameof(RedisCache));
         
-        services.AddDbContext<AppDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString(nameof(AppDbContext))));
+        services.AddDbContext<HumPsiDbContext>(options =>
+            options.UseNpgsql(configuration.GetConnectionString(nameof(HumPsiDbContext))));
 
         services.AddMediatR(config => config.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
         services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
@@ -29,6 +32,9 @@ public static  class DependencyInjection
         services.AddScoped<IHeadlineRepository, HeadlineRepository>();
         services.AddScoped<IPhotoRepository, PhotoRepository>();
         services.AddScoped<IArticleRepository, ArticleRepository>();
+        services.AddScoped<ILoggerService, LoggerService>();
+        
+        
         
         return services;
     }
