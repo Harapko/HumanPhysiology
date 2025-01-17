@@ -28,4 +28,13 @@
       </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="CommandQuery\Article\Commands\CreateArticleCommand\CreateArticleCommand.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="CommandQuery\Article\Commands\CreateArticleCommand\" />
+      <Folder Include="CommandQuery\Section\Commands\UpdateSectionCommand\" />
+    </ItemGroup>
+
 </Project>

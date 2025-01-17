@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/maks/Library/Caches/JetBrains/Rider2024.1/resharper-host/temp/Rider/vAny/CoverageData/_HumPsi.-1810025267/Snapshot/snapshot.utdcvr</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1cd05fda_002D96fe_002D4cfa_002D93a4_002Db44b9bded9d1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Handle_Should_ReturnSectionEntity_IfCreationIsTrue #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::73E94798-C838-489A-94B5-3C8F321C6E23::net8.0::HumPsi.Test.Section.Commands.CreateSectionHandlerTest.Handle_Should_ReturnSectionEntity_IfCreationIsTrue&lt;/TestId&gt;

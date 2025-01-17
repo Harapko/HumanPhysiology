@@ -2,7 +2,7 @@
 services:
   humpsi.api:
     build:
-      context: "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api"
+      context: "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api"
       dockerfile: "Dockerfile"
       target: "base"
     command: []
@@ -10,11 +10,12 @@ services:
     - "dotnet"
     - "/app/bin/Debug/net8.0/HumPsi.Api.dll"
     environment:
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/HumPsi.Api.staticwebassets.runtime.CT.json"
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
     image: "humpsi.api:dev"
     ports: []
     volumes:
-    - "C:\\Users\\bakud\\.nuget\\packages:/home/app/.nuget/packages"
-    - "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology\\HumPsi.Api:/app:rw"
-    - "C:\\Users\\bakud\\RiderProjects\\HumanPhysiology:/src:rw"
+    - "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Api:/app:rw"
+    - "/Users/maks/RiderProjects/HumanPhysiology:/src:rw"
+    - "/Users/maks/.nuget/packages:/home/app/.nuget/packages"
     working_dir: "/app"

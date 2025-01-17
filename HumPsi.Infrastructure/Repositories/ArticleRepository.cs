@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace HumPsi.Infrastructure.Repositories;
 
 public class ArticleRepository(
-    AppDbContext context,
+    HumPsiDbContext context,
     IRedisRepository redis,
     ILogger<ArticleRepository> logger,
     IConfiguration configuration,

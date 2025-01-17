@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace HumPsi.Infrastructure.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(HumPsiDbContext))]
     [Migration("20240904092812_addArticle")]
     partial class addArticle
     {
