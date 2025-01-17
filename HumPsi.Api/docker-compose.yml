@@ -6,10 +6,16 @@
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8001:8080"
+    depends_on:
+      - humpsi.cache
+      - humpsi.postgresDb
+    hostname: street-code-api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
+    networks:
+      - humpsi
   
   humpsi.cache:
     image: redis:latest
@@ -31,4 +37,8 @@
 
 volumes:
   postgres-data:
+    
+networks:
+  humpsi:
+    driver: bridge
   

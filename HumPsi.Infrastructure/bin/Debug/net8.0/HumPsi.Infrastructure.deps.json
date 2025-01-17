@@ -787,7 +787,10 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
         },
         "runtime": {
-          "HumPsi.Domain.dll": {}
+          "HumPsi.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/8.0.0.0": {
