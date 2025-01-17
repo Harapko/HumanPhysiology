@@ -16,12 +16,12 @@ public class SectionController(IMediator mediator) : ControllerBase
     [HttpGet]
     public async Task<ActionResult<List<GetSectionDtoResponse>>> GetAllSectionAsync()
     {
-        var result = await mediator.Send(new GetAllSectionQuery());
+        // var result = await mediator.Send(new GetAllSectionQuery());
+        //
+        // if (result.Count == 0)
+        //     return NotFound("Section not found or null");
 
-        if (result.Count == 0)
-            return NotFound("Section not found or null");
-
-        return result;
+        return Ok();
     }
 
     [HttpPost]

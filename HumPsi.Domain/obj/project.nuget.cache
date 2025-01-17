@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DXEWN/JlZ+yZvn30GibmtMhBdNT8901G9vOoU2J5NmgatCfJwyX+s9yBhUfC6ImNzU0n5u/AGnZv8QhfD/GGIA==",
+  "dgSpecHash": "5S3t+vW54sM=",
   "success": true,
   "projectFilePath": "/Users/maks/RiderProjects/HumanPhysiology/HumPsi.Domain/HumPsi.Domain.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,9 @@
     "/Users/maks/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/Users/maks/.nuget/packages/system.componentmodel.annotations/4.5.0/system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "/Users/maks/.nuget/packages/system.io.pipelines/5.0.2/system.io.pipelines.5.0.2.nupkg.sha512",
-    "/Users/maks/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
+    "/Users/maks/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
+    "/Users/maks/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/maks/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }
