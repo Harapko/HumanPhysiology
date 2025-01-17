@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HumPsi.Domain;
 
-public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+public class HumPsiDbContext(DbContextOptions<HumPsiDbContext> options) : DbContext(options)
 {
     public DbSet<SectionEntity> Section { get; init; }
     public DbSet<HeadlineEntity> Headline { get; init; }
@@ -11,7 +11,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(HumPsiDbContext).Assembly);
         base.OnModelCreating(modelBuilder);
     }
 }
