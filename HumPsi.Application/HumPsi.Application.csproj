@@ -35,6 +35,7 @@
     <ItemGroup>
       <Folder Include="CommandQuery\Article\Commands\CreateArticleCommand\" />
       <Folder Include="CommandQuery\Section\Commands\UpdateSectionCommand\" />
+      <Folder Include="obj\Debug\net9.0\" />
     </ItemGroup>
 
 </Project>

@@ -1,3 +1,5 @@
+using System;
+
 namespace HumPsi.Application.Section.Queries.GetAllSectionQuery;
 
 public record GetSectionDtoResponse(

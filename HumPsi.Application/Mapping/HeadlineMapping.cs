@@ -1,3 +1,4 @@
+using System;
 using AutoMapper;
 using HumPsi.Application.Headline.Commands.CreateHeadlineCommand;
 using HumPsi.Application.Headline.Commands.UpdateHeadlineCommand;

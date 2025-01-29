@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using HumPsi.Application.CommandQuery.Article.Queries.GetAllArticleQuery;
 using HumPsi.Domain.Entities;
 using MediatR;

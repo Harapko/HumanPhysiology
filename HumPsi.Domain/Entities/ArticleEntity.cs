@@ -1,3 +1,5 @@
+using System;
+
 namespace HumPsi.Domain.Entities;
 
 public class ArticleEntity

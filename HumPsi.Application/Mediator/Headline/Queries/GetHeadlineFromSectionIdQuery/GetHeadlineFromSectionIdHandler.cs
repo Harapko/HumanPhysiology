@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using AutoMapper;
 using HumPsi.Application.Headline.Queries;
 using HumPsi.Domain.Abstraction.IRepositories;

@@ -1,3 +1,4 @@
+using System;
 using MediatR;
 
 namespace HumPsi.Application.CommandQuery.Article.Commands.DeleteArticleCommand;

@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using AutoMapper;
 using HumPsi.Application.Abstraction.IService;
 using HumPsi.Domain.Abstraction.IRepositories;

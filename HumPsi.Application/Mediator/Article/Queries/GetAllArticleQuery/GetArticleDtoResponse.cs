@@ -1,3 +1,5 @@
+using System;
+
 namespace HumPsi.Application.CommandQuery.Article.Queries.GetAllArticleQuery;
 
 public record GetArticleDtoResponse(

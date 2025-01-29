@@ -1,3 +1,5 @@
+using System;
+
 namespace HumPsi.Application.Headline.Queries;
 
 public record GetHeadlineDtoResponse(

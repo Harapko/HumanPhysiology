@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace HumPsi.Domain.Abstraction.IRepositories;
 
 public interface IRepositoryWrapper
