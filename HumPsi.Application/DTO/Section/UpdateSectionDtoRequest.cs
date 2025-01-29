@@ -1,3 +1,5 @@
+using System;
+
 namespace HumPsi.Application.Section.Commands.UpdateSectionCommand;
 
 public record UpdateSectionDtoRequest(

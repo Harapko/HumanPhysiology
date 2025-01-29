@@ -1,3 +1,4 @@
+using System;
 using AutoMapper;
 using HumPsi.Application.CommandQuery.Article.Commands.CreateArticleCommand;
 using HumPsi.Application.CommandQuery.Article.Commands.UpdateArticleCommand;

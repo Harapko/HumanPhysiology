@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace HumPsi.Domain.Abstraction.IRepositories.@base;

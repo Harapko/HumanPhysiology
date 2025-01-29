@@ -1,3 +1,5 @@
+using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace HumPsi.Domain.Abstraction.IRepositories;
