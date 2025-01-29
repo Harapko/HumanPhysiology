@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using HumPsi.Domain;
 using HumPsi.Domain.Abstraction.IRepositories;
 using HumPsi.Domain.Entities;
@@ -10,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace HumPsi.Infrastructure.Repositories;
+namespace HumPsi.Infrastructure.Realizations.Repositories;
 
 public class ArticleRepository(
     HumPsiDbContext context,
