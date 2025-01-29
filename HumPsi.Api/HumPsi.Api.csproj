@@ -23,6 +23,7 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Remove="obj\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -34,6 +35,18 @@
       <Folder Include="obj\Debug\net9.0\" />
       <Folder Include="wwwroot\Article\" />
       <Folder Include="wwwroot\headlinePhoto\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
     </ItemGroup>
 
 </Project>

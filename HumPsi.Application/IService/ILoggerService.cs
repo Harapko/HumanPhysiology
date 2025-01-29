@@ -1,4 +1,4 @@
-namespace HumPsi.Application.Abstraction.IService;
+namespace HumPsi.Application.IService;
 
 public interface ILoggerService
 {

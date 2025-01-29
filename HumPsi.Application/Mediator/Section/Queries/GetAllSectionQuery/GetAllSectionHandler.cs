@@ -1,17 +1,18 @@
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using AutoMapper;
-using HumPsi.Domain.Abstraction.IRepositories;
-using HumPsi.Domain.Entities;
 using MediatR;
 
 namespace HumPsi.Application.Section.Queries.GetAllSectionQuery;
 
-public class GetAllSectionHandler(IRepositoryWrapper _repositoryWrapper, IMapper mapper) : IRequestHandler<Mediator.Section.Queries.GetAllSectionQuery.GetAllSectionQuery, IEnumerable<GetSectionDtoResponse>>
+public class GetAllSectionHandler(IMapper mapper) : IRequestHandler<Mediator.Section.Queries.GetAllSectionQuery.GetAllSectionQuery, IEnumerable<GetSectionDtoResponse>>
 {
     public async Task<IEnumerable<GetSectionDtoResponse>> Handle(Mediator.Section.Queries.GetAllSectionQuery.GetAllSectionQuery request, CancellationToken cancellationToken)
     {
+        // await using var sqlConn = sqlConnFactory.GetConnection();
+        //
+        // var response = await sqlConn.QueryFirstOrDefaultAsync<GetSectionDtoResponse>(
+        //     @""
+        // );
+        
         return [];
     }
 }

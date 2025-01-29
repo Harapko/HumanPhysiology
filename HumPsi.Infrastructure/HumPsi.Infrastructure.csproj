@@ -27,6 +27,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\HumPsi.Domain\HumPsi.Domain.csproj" />
+        <ProjectReference Include="..\HumPsi.Application\HumPsi.Application.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -40,6 +41,18 @@
 
     <ItemGroup>
       <Folder Include="obj\Debug\net9.0\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
     </ItemGroup>
 
 </Project>

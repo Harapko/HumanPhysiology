@@ -1,8 +1,7 @@
-using Microsoft.Extensions.Logging;
+using HumPsi.Application.IService;
 using ILogger = Serilog.ILogger;
 
 namespace HumPsi.Infrastructure.Realizations.Service;
-using HumPsi.Application.Abstraction.IService;
 
 
 public class LoggerService(ILogger logger) : ILoggerService

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="Dapper" Version="2.1.35" />
       <PackageReference Include="FluentValidation" Version="12.0.0-preview1" />
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0-preview1" />
       <PackageReference Include="MediatR" Version="12.4.1" />
@@ -19,7 +20,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\HumPsi.Domain\HumPsi.Domain.csproj" />
-      <ProjectReference Include="..\HumPsi.Infrastructure\HumPsi.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -30,12 +30,19 @@
 
     <ItemGroup>
       <Compile Remove="CommandQuery\Article\Commands\CreateArticleCommand\CreateArticleCommand.cs" />
+      <Compile Remove="obj\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="CommandQuery\Article\Commands\CreateArticleCommand\" />
-      <Folder Include="CommandQuery\Section\Commands\UpdateSectionCommand\" />
       <Folder Include="obj\Debug\net9.0\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
     </ItemGroup>
 
 </Project>
